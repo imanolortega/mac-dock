@@ -3,6 +3,9 @@ import Image from 'next/image'
 import styles from './dock-item.module.scss'
 import { maxButtonDistance, maxButtonSize, minButtonSize } from '@/utils/config'
 
+import { Inter } from 'next/font/google'
+const inter = Inter({ subsets: ['latin'] })
+
 interface DockItemProps {
   mousePosition: {
     x: number
@@ -10,11 +13,17 @@ interface DockItemProps {
   }
   name: string
   src: string
+  active: boolean
 }
 
-export default function DockItem({ mousePosition, name, src }: DockItemProps) {
+export default function DockItem({
+  active,
+  mousePosition,
+  name,
+  src,
+}: DockItemProps) {
   const [isHovering, setIsHovering] = useState(false)
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(active || false)
   const dockItemRef = useRef<HTMLLIElement>(null)
   const [dockItemRect, setdockItemRect] = useState<DOMRect | undefined>(
     undefined,
@@ -68,7 +77,7 @@ export default function DockItem({ mousePosition, name, src }: DockItemProps) {
       <div
         className={`${styles['title']} ${
           isHovering ? styles['show-title'] : ''
-        }`}
+        } ${inter.className}`}
       >
         {name}
       </div>

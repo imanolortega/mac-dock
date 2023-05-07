@@ -1,5 +1,3 @@
-'use client'
-
 import { buttons } from '@/utils/config'
 import { MouseEvent, useState } from 'react'
 import DockItem from '@/components/dock-item'
@@ -22,8 +20,9 @@ export default function Dock() {
       onMouseLeave={() => setMousePosition({ x: 0, y: 0 })}
     >
       <ul className={styles['dock-inner']}>
-        {buttons.map(({ name, src }) => (
+        {buttons.map(({ active, name, src }) => (
           <DockItem
+            active={active}
             key={name}
             mousePosition={mousePosition}
             name={name}
