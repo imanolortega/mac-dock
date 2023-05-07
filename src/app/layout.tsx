@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'macOS Dockbar',
-  description: 'A recreation of the macOS dockbar with NextJS, TypeScript and SCSS 🍏',
+  title: 'MacOS Dock',
+  description: 'A recreation of the macOS dock with NextJS, TypeScript and SCSS 🍏',
 }
 
 export default function RootLayout({
