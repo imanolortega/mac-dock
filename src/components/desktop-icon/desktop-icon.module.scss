@@ -1,0 +1,13 @@
+.icon-container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+
+  .name {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}
