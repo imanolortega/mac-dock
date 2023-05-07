@@ -1,22 +1,21 @@
 import { Metadata } from 'next'
 import './globals.scss'
+import { description, title, url } from '@/utils/config'
 
 export const metadata: Metadata = {
   title: {
-    default: 'MacOS Dock Animation',
+    default: title,
     template: '%s | MacOS Dock Animation',
   },
-  description:
-    'A recreation of the macOS dock with NextJS, TypeScript and SCSS 🍏',
+  description: description,
   openGraph: {
-    title: 'MacOS Dock Animation',
-    description:
-      'A recreation of the macOS dock with NextJS, TypeScript and SCSS 🍏',
-    url: 'https://mac-dock.vercel.app/',
+    title: title,
+    description: description,
+    url: url,
     siteName: 'Imanol Ortega',
     images: [
       {
-        url: 'https://mac-dock.vercel.app/images/og.png',
+        url: `${url}/images/og.png`,
         width: 1920,
         height: 1080,
       },

@@ -44,3 +44,8 @@ export const buttons = [
 export const maxButtonSize = 95
 export const minButtonSize = 70
 export const maxButtonDistance = 200
+
+export const title = 'MacOS Dock Animation'
+export const description =
+  'A recreation of the macOS dock with NextJS, TypeScript and SCSS 🍏'
+export const url = 'https://mac-dock.vercel.app/'
