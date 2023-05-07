@@ -3,6 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    domains: ['uploads-ssl.webflow.com'],
+  },
 }
 
 module.exports = nextConfig
