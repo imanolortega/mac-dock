@@ -1,3 +1,5 @@
+@import '@/styles/variables.scss';
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,8 +13,9 @@ body {
 }
 
 body {
-  color: white;
+  color: $white;
   background: url(/images/macos_monterrey.jpeg);
+  background-color: $purple;
   background-size: 1920px 1080px;
   background-repeat: no-repeat;
 
