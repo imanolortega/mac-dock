@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import './globals.scss'
 import { description, title, url } from '@/utils/config'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: {
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     siteName: 'Imanol Ortega',
     images: [
       {
-        url: `${url}/images/og.png`,
+        url: `${url}images/og.png`,
         width: 1920,
         height: 1080,
       },
@@ -46,6 +47,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+      <Script id="g-analytics">
+        {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+          page_path: window.location.pathname,
+        });;
+      `}
+      </Script>
       <body>{children}</body>
     </html>
   )
