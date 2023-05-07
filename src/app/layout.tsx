@@ -1,6 +1,7 @@
-import { Metadata } from 'next'
 import './globals.scss'
+import { Analytics } from '@vercel/analytics/react'
 import { description, title, url } from '@/utils/config'
+import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
@@ -60,7 +61,10 @@ export default function RootLayout({
         });;
       `}
       </Script>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
