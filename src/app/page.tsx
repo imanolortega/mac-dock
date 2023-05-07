@@ -37,6 +37,14 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               Imanol.
+            </a>{' '}
+            <a
+              className={styles['green-link']}
+              href="https://github.com/imanolrtega/mac-dock"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Check the repository.
             </a>
           </p>
         </Modal>
