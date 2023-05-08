@@ -75,25 +75,29 @@ export default function DockItem({
 
   return (
     <li className={styles['dock-item']} style={buttonStyle} ref={dockItemRef}>
-      <div
-        className={`${styles['title']} ${
-          isHovering ? styles['show-title'] : ''
-        } ${inter.className}`}
-      >
-        {name}
-      </div>
-      <Image
-        className={styles['icon']}
-        src={src}
-        alt={name}
-        width={buttonStyle.width}
-        height={buttonStyle.height}
-        style={buttonStyle}
+      <button
+        className={styles['btn']}
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
         onClick={() => setIsActive(!isActive)}
-      />
-      <span className={isActive ? styles['active'] : ''}></span>
+      >
+        <div
+          className={`${styles['title']} ${
+            isHovering ? styles['show-title'] : ''
+          } ${inter.className}`}
+        >
+          {name}
+        </div>
+        <Image
+          className={styles['icon']}
+          src={src}
+          alt={name}
+          width={buttonStyle.width}
+          height={buttonStyle.height}
+          style={buttonStyle}
+        />
+        <span className={isActive ? styles['active'] : ''}></span>
+      </button>
     </li>
   )
 }

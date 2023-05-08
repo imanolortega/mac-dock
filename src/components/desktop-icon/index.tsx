@@ -12,16 +12,15 @@ interface DesktopIconProps {
 
 export default function DesktopIcon({ src, name, onClick }: DesktopIconProps) {
   return (
-    <div className={styles['icon-container']}>
+    <button onClick={onClick} className={styles['icon-container']}>
       <Image
         className={styles['icon']}
         src={src}
         alt={name}
         width={70}
         height={70}
-        onClick={onClick}
       />
       <span className={`${styles['name']} ${inter.className}`}>{name}</span>
-    </div>
+    </button>
   )
 }
