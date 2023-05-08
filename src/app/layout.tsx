@@ -14,16 +14,26 @@ export const metadata: Metadata = {
     title: title,
     description: description,
     url: url,
-    siteName: 'Imanol Ortega',
+    siteName: `${title} | By Imanol Ortega`,
+    type: 'website',
+    locale: 'es-ES',
     images: [
       {
-        url: `${url}images/og.png`,
-        width: 1920,
-        height: 1080,
+        url: `${url}images/og_sm.png`,
+        width: 800,
+        height: 600,
+      },
+      {
+        url: `${url}images/og_m.png`,
+        width: 1200,
+        height: 630,
+      },
+      {
+        url: `${url}images/og_xl.png`,
+        width: 1440,
+        height: 760,
       },
     ],
-    locale: 'es-ES',
-    type: 'website',
   },
   robots: {
     index: true,
