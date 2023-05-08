@@ -5,6 +5,7 @@ import Dock from '@/components/dock'
 import Modal from '@/components/modal'
 import styles from '@/components/modal/modal.module.scss'
 import DesktopIcon from '@/components/desktop-icon'
+import { title } from '@/utils/config'
 
 export default function Home() {
   const [showModal, setShowModal] = useState(true)
@@ -15,8 +16,10 @@ export default function Home() {
 
   return (
     <main>
+      <h1 style={{ display: 'none' }}>{title}</h1>
       <section>
         <DesktopIcon
+          alt="Modal Handle Button"
           src="/images/system_information.png"
           name="System Information"
           onClick={handleModal}

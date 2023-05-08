@@ -5,18 +5,24 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 interface DesktopIconProps {
+  alt: string
   src: string
   name: string
   onClick: () => void
 }
 
-export default function DesktopIcon({ src, name, onClick }: DesktopIconProps) {
+export default function DesktopIcon({
+  alt,
+  src,
+  name,
+  onClick,
+}: DesktopIconProps) {
   return (
     <button onClick={onClick} className={styles['icon-container']}>
       <Image
         className={styles['icon']}
         src={src}
-        alt={name}
+        alt={alt}
         width={70}
         height={70}
       />

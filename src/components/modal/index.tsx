@@ -33,7 +33,7 @@ export default function Modal({ children, closeModal, title }: Modal) {
           <button className={styles['green-btn']} title="Dummy Button"></button>
         </div>
         <div className={styles['modal-body']}>
-          {title && <h3>{title}</h3>}
+          {title && <h2>{title}</h2>}
           <div>{children}</div>
         </div>
       </div>
