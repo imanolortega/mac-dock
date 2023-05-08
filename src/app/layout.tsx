@@ -6,7 +6,7 @@ import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: {
-    default: title,
+    default: `${title} | By Imanol Ortega`,
     template: '%s | MacOS Dock Animation',
   },
   description: description,
