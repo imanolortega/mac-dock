@@ -19,19 +19,9 @@ export const metadata: Metadata = {
     locale: 'es-ES',
     images: [
       {
-        url: `${url}images/og_sm.png`,
-        width: 800,
-        height: 600,
-      },
-      {
-        url: `${url}images/og_m.png`,
+        url: `${url}images/og.png`,
         width: 1200,
-        height: 630,
-      },
-      {
-        url: `${url}images/og_xl.png`,
-        width: 1440,
-        height: 760,
+        height: 600,
       },
     ],
   },
