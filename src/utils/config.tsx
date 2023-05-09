@@ -74,9 +74,16 @@ export const rightItems = [
     id: 'bluetooth',
   },
   {
-    className: 'battery',
-    icon: <BatteryIcon />,
+    className: '',
     id: 'battery',
+    icon: (
+      <Image
+        src="/images/battery.png"
+        alt="Battery Icon"
+        width={23}
+        height={23}
+      />
+    ),
   },
   {
     className: 'wifi',
