@@ -4,7 +4,10 @@ import { leftItems, rightItems } from '@/utils/config'
 import Clock from '@/components/clock'
 
 import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+})
 
 export default function Navbar() {
   return (
