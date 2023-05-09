@@ -6,6 +6,7 @@ import Modal from '@/components/modal'
 import styles from '@/components/modal/modal.module.scss'
 import DesktopIcon from '@/components/desktop-icon'
 import { title } from '@/utils/config'
+import Navbar from '@/components/navbar'
 
 export default function Home() {
   const [showModal, setShowModal] = useState(true)
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <main>
       <h1 style={{ display: 'none' }}>{title}</h1>
+      <Navbar />
       <section>
         <DesktopIcon
           alt="Modal Handle Button"
