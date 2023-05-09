@@ -33,23 +33,21 @@ export default function Home() {
             A recreation of the macOS dock animation using NextJS, TypeScript,
             and SCSS. It works only on desktop.
           </p>
-
           <p className={styles['about']}>
-            By{' '}
+            <a
+              href="https://github.com/imanolrtega/mac-dock"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Check the <span className={styles['green-link']}>repository</span>
+              .
+            </a>
             <a
               href="https://imanolortega.dev/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Imanol.
-            </a>{' '}
-            <a
-              className={styles['green-link']}
-              href="https://github.com/imanolrtega/mac-dock"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Check the repository.
+              Visit my <span className={styles['yellow-link']}>website</span>.
             </a>
           </p>
         </Modal>
