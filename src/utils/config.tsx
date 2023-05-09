@@ -1,5 +1,4 @@
 import {
-  BatteryIcon,
   BluetoothIcon,
   SearchIcon,
   VolIcon,
