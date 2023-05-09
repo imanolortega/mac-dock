@@ -10,6 +10,7 @@
   background: rgba(83, 83, 83, 0.2);
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
+  z-index: 10;
 
   .left-side {
     display: flex;
@@ -56,6 +57,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    .github {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
 
     .vol {

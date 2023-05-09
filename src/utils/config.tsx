@@ -1,5 +1,6 @@
 import {
   BluetoothIcon,
+  GitHubIcon,
   SearchIcon,
   VolIcon,
   WifiIcon,
@@ -62,6 +63,20 @@ export const leftItems = [
 ]
 
 export const rightItems = [
+  {
+    className: 'github',
+    icon: (
+      <a
+        title="GitHub Icon"
+        href="https://github.com/imanolrtega/mac-dock"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <GitHubIcon />
+      </a>
+    ),
+    id: 'github',
+  },
   {
     className: 'vol',
     icon: <VolIcon />,
