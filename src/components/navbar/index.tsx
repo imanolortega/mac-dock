@@ -31,9 +31,9 @@ export default function Navbar() {
             {icon}
           </li>
         ))}
-        <div className={styles['time']}>
+        <li className={styles['time']}>
           <Clock />
-        </div>
+        </li>
       </ul>
     </nav>
   )
