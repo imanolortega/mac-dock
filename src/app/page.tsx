@@ -39,8 +39,8 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Check the <span className={styles['green-link']}>repository</span>
-              .
+              Check the{' '}
+              <span className={styles['yellow-link']}>repository</span>.
             </a>
             <a
               href="https://imanolortega.dev/"
