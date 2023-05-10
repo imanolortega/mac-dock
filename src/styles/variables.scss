@@ -11,7 +11,7 @@ $medium: 1024px;
 $large: 1920px;
 $extraLarge: 2560px;
 
-// Gaps
+//Gaps
 $gap-special: 0.25rem; //4
 $gap: 0.5rem; //8
 $gap-x2: 1rem; //16
@@ -20,7 +20,7 @@ $gap-x4: 2rem; //32
 $gap-x5: 2.5rem; //40
 $gap-x6: 3rem; //48
 
-// Border radius
+//Border radius
 $normal-border: 1rem;
 
 @mixin mobile {

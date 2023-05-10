@@ -1,20 +1,19 @@
 'use client'
 
 import { useState } from 'react'
+import { onlyDesktopMessage, onlyMobileMessage, title } from '@/utils/config'
+
 import Dock from '@/components/dock'
 import Modal from '@/components/modal'
 import styles from '@/components/modal/modal.module.scss'
 import DesktopIcon from '@/components/desktop-icon'
-import { title } from '@/utils/config'
 import Navbar from '@/components/navbar'
 
 export default function Home() {
   const [showModal, setShowModal] = useState(true)
-
   const handleModal = () => {
     setShowModal(!showModal)
   }
-
   return (
     <main>
       <h1 style={{ display: 'none' }}>{title}</h1>
@@ -29,14 +28,8 @@ export default function Home() {
       </section>
       {showModal && (
         <Modal closeModal={handleModal} title="MacOS Dock Animation">
-          <p className={styles['only-desktop']}>
-            A recreation of the macOS dock animation using NextJS, TypeScript,
-            and SCSS. It works only on desktop.
-          </p>
-          <p className={styles['only-mobile']}>
-            This website is a recreation of the macOS dock animation using NextJS, TypeScript,
-            and SCSS. It works only on desktop. Please, visit this website on a desktop computer 🙏.
-          </p>
+          <p className={styles['only-desktop']}>{onlyDesktopMessage()}</p>
+          <p className={styles['only-mobile']}>{onlyMobileMessage()}</p>
           <p className={styles['about']}>
             <a
               href="https://github.com/imanolrtega/mac-dock"
