@@ -9,6 +9,10 @@
   width: 70px;
   cursor: pointer;
 
+  @include medium {
+    margin: $gap-x2 $gap-x2;
+  }
+
   .name {
     color: $white;
     font-size: 0.7rem;
