@@ -136,14 +136,13 @@ export const maxButtonDistance = 200
 
 export const title = 'MacOS Dock Animation'
 export const description =
-  'A recreation of the macOS dock with NextJS, TypeScript and SCSS 🍏'
+  'A recreation of the macOS desktop and dock animation using NextJS, TypeScript, and SCSS.'
 export const url = 'https://mac-dock.vercel.app/'
 
 export function onlyDesktopMessage() {
   return (
     <>
-      A recreation of the macOS dock animation using NextJS, TypeScript, and
-      SCSS. It works only on desktop.
+      {description}
     </>
   )
 }
@@ -151,8 +150,7 @@ export function onlyDesktopMessage() {
 export function onlyMobileMessage() {
   return (
     <>
-      This website is a recreation of the macOS dock animation using NextJS,
-      TypeScript, and SCSS. It works only on desktop. Please, visit this website
+      This website is a recreation of the macOS desktop and dock animation using NextJS, TypeScript, and SCSS. It works only on desktop. Please, visit this website
       on a desktop computer 🙏.
     </>
   )

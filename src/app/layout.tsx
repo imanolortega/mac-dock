@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   description: description,
   openGraph: {
-    title: title,
+    title: `${title} | By Imanol Ortega`,
     description: description,
     url: url,
     siteName: `${title} | By Imanol Ortega`,
