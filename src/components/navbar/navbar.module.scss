@@ -1,3 +1,5 @@
+@import '@/styles/variables.scss';
+
 .navbar {
   width: 100%;
   height: 2rem;
@@ -11,6 +13,10 @@
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
   z-index: 10;
+
+  @include medium {
+    display: none;
+  }
 
   .left-side {
     display: flex;

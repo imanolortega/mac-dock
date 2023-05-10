@@ -1,7 +1,9 @@
+@import '@/styles/variables.scss';
+
 .dock {
   width: auto;
   height: 5rem;
-  border-radius: 1rem;
+  border-radius: $normal-border;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -10,6 +12,10 @@
   transform: translateX(-50%);
   box-shadow: 0px 0px 0.1rem rgba(0, 0, 0, 0.8);
 
+  @include mobile {
+    display: none;
+  }
+
   .dock-inner {
     padding: 0.3rem;
     width: auto;
@@ -17,7 +23,7 @@
     display: flex;
     align-items: flex-end;
     gap: 0px;
-    border-radius: 1rem;
+    border-radius: $normal-border;
     background: rgba(83, 83, 83, 0.25);
     backdrop-filter: blur(1.8rem);
     -webkit-backdrop-filter: blur(1.8rem);

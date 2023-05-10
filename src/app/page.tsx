@@ -29,9 +29,13 @@ export default function Home() {
       </section>
       {showModal && (
         <Modal closeModal={handleModal} title="MacOS Dock Animation">
-          <p>
+          <p className={styles['only-desktop']}>
             A recreation of the macOS dock animation using NextJS, TypeScript,
             and SCSS. It works only on desktop.
+          </p>
+          <p className={styles['only-mobile']}>
+            This website is a recreation of the macOS dock animation using NextJS, TypeScript,
+            and SCSS. It works only on desktop. Please, visit this website on a desktop computer 🙏.
           </p>
           <p className={styles['about']}>
             <a

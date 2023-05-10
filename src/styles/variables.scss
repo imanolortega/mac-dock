@@ -1,5 +1,48 @@
+//Colors
 $red: #FF3B30;
 $yellow: #FFCC00;
 $green: #34C759;
 $white: #f5f5f5;
 $purple: #5224b2;
+
+//Mixins
+$mobile: 768px;
+$medium: 1024px;
+$large: 1920px;
+$extraLarge: 2560px;
+
+// Gaps
+$gap-special: 0.25rem; //4
+$gap: 0.5rem; //8
+$gap-x2: 1rem; //16
+$gap-x3: 1.5rem; //24
+$gap-x4: 2rem; //32
+$gap-x5: 2.5rem; //40
+$gap-x6: 3rem; //48
+
+// Border radius
+$normal-border: 1rem;
+
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+      @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (max-width: $medium) {
+      @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: $large) {
+      @content;
+  }
+}
+
+@mixin extraLarge {
+  @media screen and (min-width: $extraLarge) {
+      @content;
+  }
+}

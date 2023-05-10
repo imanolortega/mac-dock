@@ -3,7 +3,7 @@
 .icon-container {
   background: transparent;
   border: none;
-  margin: 3rem 1rem;
+  margin: $gap-x6 $gap-x2;
   display: flex;
   flex-direction: column;
   width: 70px;
@@ -14,6 +14,6 @@
     font-size: 0.7rem;
     line-height: 0.9rem;
     text-align: center;
-    margin-top: 0.5rem;
+    margin-top: $gap;
   }
 }

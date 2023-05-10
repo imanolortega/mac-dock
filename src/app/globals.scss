@@ -19,11 +19,11 @@ body {
   background-size: 1920px 1080px;
   background-repeat: no-repeat;
 
-  @media screen and (min-width: 1921px) {
+  @include large {
     background-size: 2560px 1440px;
   }
 
-  @media screen and (min-width: 2561px) {
+  @include extraLarge {
     background-size: 3840px 2160px;
   }
 }
