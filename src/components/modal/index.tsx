@@ -1,16 +1,11 @@
+import { ModalProps } from '@/utils/interfaces'
 import { MouseEvent } from 'react'
 import styles from './modal.module.scss'
 
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
-interface Modal {
-  children: React.ReactNode
-  closeModal: () => void
-  title?: string
-}
-
-export default function Modal({ children, closeModal, title }: Modal) {
+export default function Modal({ children, closeModal, title }: ModalProps) {
   const handleInnerClick = (e: MouseEvent<HTMLDivElement>) => {
     e.stopPropagation()
   }

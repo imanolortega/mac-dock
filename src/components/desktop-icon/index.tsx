@@ -1,15 +1,9 @@
+import { DesktopIconProps } from '@/utils/interfaces'
 import Image from 'next/image'
 import styles from './desktop-icon.module.scss'
 
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
-
-interface DesktopIconProps {
-  alt: string
-  src: string
-  name: string
-  onClick: () => void
-}
 
 export default function DesktopIcon({
   alt,

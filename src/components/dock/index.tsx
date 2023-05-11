@@ -6,7 +6,7 @@ import styles from './dock.module.scss'
 export default function Dock() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
 
-  function handleMouseMove(event: MouseEvent): void {
+  const handleMouseMove = (event: MouseEvent): void => {
     setMousePosition({
       x: event.pageX || 0,
       y: event.pageY || 0,

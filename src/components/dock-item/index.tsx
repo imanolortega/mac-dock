@@ -1,19 +1,11 @@
 import { useCallback, useEffect, useRef, useState, useMemo } from 'react'
+import { DockItemProps } from '@/utils/interfaces'
 import Image from 'next/image'
 import styles from './dock-item.module.scss'
 import { maxButtonDistance, maxButtonSize, minButtonSize } from '@/utils/config'
 
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
-interface DockItemProps {
-  mousePosition: {
-    x: number
-    y: number
-  }
-  name: string
-  src: string
-  active: boolean
-}
 
 export default function DockItem({
   active,
