@@ -73,13 +73,25 @@ export default function DockItem({
     }
   }, [dockItemRef, dockItemRect, mousePosition])
 
+  const [clicked, setClicked] = useState(false)
+
+  const handleClick = () => {
+    if (isActive) {
+      return setIsActive(false)
+    } else {
+      setClicked(true)
+      setTimeout(() => setClicked(false), 1500)
+      setTimeout(() => setIsActive(true), 500)
+    }
+  }
+
   return (
     <li className={styles['dock-item']} style={buttonStyle} ref={dockItemRef}>
       <button
         className={styles['btn']}
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
-        onClick={() => setIsActive(!isActive)}
+        onClick={handleClick}
       >
         <div
           className={`${styles['title']} ${
@@ -89,7 +101,7 @@ export default function DockItem({
           {name}
         </div>
         <Image
-          className={styles['icon']}
+          className={`${styles['icon']} ${clicked ? styles['bounce'] : ''}`}
           src={src}
           alt={name}
           width={buttonStyle.width}

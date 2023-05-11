@@ -140,18 +140,15 @@ export const description =
 export const url = 'https://mac-dock.vercel.app/'
 
 export function onlyDesktopMessage() {
-  return (
-    <>
-      {description}
-    </>
-  )
+  return <>{description}</>
 }
 
 export function onlyMobileMessage() {
   return (
     <>
-      This website is a recreation of the macOS desktop and dock animation using NextJS, TypeScript, and SCSS. It works only on desktop. Please, visit this website
-      on a desktop computer 🙏.
+      This website is a recreation of the macOS desktop and dock animation using
+      NextJS, TypeScript, and SCSS. It works only on desktop. Please, visit this
+      website on a desktop computer 🙏.
     </>
   )
 }
