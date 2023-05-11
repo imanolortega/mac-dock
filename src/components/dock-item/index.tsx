@@ -96,7 +96,7 @@ export default function DockItem({
         <div
           className={`${styles['title']} ${
             isHovering ? styles['show-title'] : ''
-          } ${inter.className}`}
+          } ${inter.className} ${clicked ? styles['bounce'] : ''}`}
         >
           {name}
         </div>
