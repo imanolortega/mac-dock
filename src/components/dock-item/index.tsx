@@ -81,7 +81,7 @@ export default function DockItem({
     } else {
       setClicked(true)
       setTimeout(() => setClicked(false), 1500)
-      setTimeout(() => setIsActive(true), 500)
+      setTimeout(() => setIsActive(true), 1000)
     }
   }
 
