@@ -19,7 +19,7 @@ export default function DesktopIcon({
         alt={alt}
         width={70}
         height={70}
-        placeholder='blur'
+        placeholder="blur"
         blurDataURL={src}
       />
       <span className={`${styles['name']} ${inter.className}`}>{name}</span>

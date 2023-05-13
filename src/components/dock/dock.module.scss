@@ -3,7 +3,7 @@
 .dock {
   width: auto;
   height: 5rem;
-  border-radius: $normal-border;
+  border-radius: $border-md;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -23,7 +23,7 @@
     display: flex;
     align-items: flex-end;
     gap: 0px;
-    border-radius: $normal-border;
+    border-radius: $border-md;
     background: rgba(83, 83, 83, 0.25);
     backdrop-filter: blur(1.8rem);
     -webkit-backdrop-filter: blur(1.8rem);

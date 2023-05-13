@@ -21,7 +21,8 @@ $gap-x5: 2.5rem; //40
 $gap-x6: 3rem; //48
 
 //Border radius
-$normal-border: 1rem;
+$border-sm: 0.5rem;
+$border-md: 1rem;
 
 @mixin mobile {
   @media screen and (max-width: $mobile) {

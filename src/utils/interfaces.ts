@@ -20,3 +20,12 @@ export interface ModalProps {
   closeModal: () => void
   title?: string
 }
+
+export interface Repository {
+  stargazers_count: number
+}
+
+export interface GitHubStarsProps {
+  owner: string
+  repo: string
+}

@@ -3,11 +3,12 @@
 import { useState } from 'react'
 import { onlyDesktopMessage, onlyMobileMessage, title } from '@/utils/config'
 
+import { GitHubStars } from '@/components/github-star'
+import DesktopIcon from '@/components/desktop-icon'
 import Dock from '@/components/dock'
 import Modal from '@/components/modal'
-import styles from '@/components/modal/modal.module.scss'
-import DesktopIcon from '@/components/desktop-icon'
 import Navbar from '@/components/navbar'
+import styles from '@/components/modal/modal.module.scss'
 
 export default function Home() {
   const [showModal, setShowModal] = useState(true)
@@ -25,6 +26,7 @@ export default function Home() {
           name="System Information"
           onClick={handleModal}
         />
+        <GitHubStars owner="imanolrtega" repo="mac-dock" />
       </section>
       {showModal && (
         <Modal closeModal={handleModal} title="MacOS Dock Animation">

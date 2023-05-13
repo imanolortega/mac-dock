@@ -99,7 +99,7 @@ export default function DockItem({
           width={buttonStyle.width}
           height={buttonStyle.height}
           style={buttonStyle}
-          placeholder='blur'
+          placeholder="blur"
           blurDataURL={src}
         />
         <span className={isActive ? styles['active'] : ''}></span>

@@ -1,7 +1,8 @@
-import styles from './navbar.module.scss'
-import Image from 'next/image'
 import { leftItems, rightItems } from '@/utils/config'
 import Clock from '@/components/clock'
+
+import Image from 'next/image'
+import styles from './navbar.module.scss'
 
 import { Inter } from 'next/font/google'
 const inter = Inter({
