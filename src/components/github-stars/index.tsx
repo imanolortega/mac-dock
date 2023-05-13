@@ -26,7 +26,7 @@ export function GitHubStars({ owner, repo }: GitHubStarsProps) {
   return (
     <a
       title="GitHub Stars"
-      href="https://github.com/imanolrtega/mac-dock/stargazers"
+      href="https://github.com/imanolrtega/mac-dock/"
       rel="noopener noreferrer"
       target="_blank"
       className={styles['container']}
@@ -36,7 +36,7 @@ export function GitHubStars({ owner, repo }: GitHubStarsProps) {
       </div>
       <div className={`${styles['count']} ${inter.className}`}>
         <span>{starCount}</span>
-        <span>{starCount === 1 ? 'Star' : 'Stars' }</span>
+        <span>{starCount === 1 ? 'Star' : 'Stars'}</span>
       </div>
     </a>
   )
