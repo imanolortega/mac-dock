@@ -1,6 +1,6 @@
 ## Getting Started
 
-This is a recreation of the macOS dockbar with NextJS, TypeScript and SCSS.
+This is a recreation of the macOS dock animation using NextJS, TypeScript, and SCSS. 
 
 First, run the development server:
 
