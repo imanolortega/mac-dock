@@ -3,6 +3,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { description, title, url } from '@/utils/config'
 import { Metadata } from 'next'
 import Script from 'next/script'
+import GoogleAnalytics from '@/components/google-analytics'
 
 export const metadata: Metadata = {
   title: {
@@ -48,19 +49,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-      <Script id="g-analytics">
-        {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-          page_path: window.location.pathname,
-        });;
-      `}
-      </Script>
+      <head>
+        <meta
+          name="google-site-verification"
+          content={process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION}
+        />
+      </head>
+      <GoogleAnalytics />
       <body>
         {children}
         <Analytics />
