@@ -26,7 +26,7 @@ export function GitHubStars({ owner, repo }: GitHubStarsProps) {
   return (
     <a
       title="GitHub Stars"
-      href="https://github.com/imanolrtega/mac-dock/"
+      href="https://github.com/imanolortega/mac-dock/"
       rel="noopener noreferrer"
       target="_blank"
       className={styles['container']}

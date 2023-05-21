@@ -34,7 +34,7 @@ export default function Home() {
           <p className={styles['only-mobile']}>{onlyMobileMessage()}</p>
           <p className={styles['about']}>
             <a
-              href="https://github.com/imanolrtega/mac-dock"
+              href="https://github.com/imanolortega/mac-dock"
               target="_blank"
               rel="noopener noreferrer"
             >

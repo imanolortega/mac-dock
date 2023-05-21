@@ -68,7 +68,7 @@ export const rightItems = [
     icon: (
       <a
         title="GitHub Icon"
-        href="https://github.com/imanolrtega/mac-dock"
+        href="https://github.com/imanolortega/mac-dock"
         rel="noopener noreferrer"
         target="_blank"
       >
