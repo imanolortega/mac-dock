@@ -1,7 +1,13 @@
 'use client'
 
 import { useState } from 'react'
-import { githubOwner, githubRepo, onlyDesktopMessage, onlyMobileMessage, title } from '@/utils/config'
+import {
+  githubOwner,
+  githubRepo,
+  onlyDesktopMessage,
+  onlyMobileMessage,
+  title,
+} from '@/utils/config'
 
 import { GitHubStars } from '@/components/github-stars'
 import DesktopIcon from '@/components/desktop-icon'

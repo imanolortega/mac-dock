@@ -7,9 +7,9 @@ import {
 } from '@/components/icons'
 import Image from 'next/image'
 
-export const githubUrl = `https://github.com/${githubOwner}/${githubRepo}/`
 export const githubOwner = 'imanolortega'
 export const githubRepo = 'mac-dock'
+export const githubUrl = `https://github.com/${githubOwner}/${githubRepo}/`
 
 export const buttons = [
   {
@@ -150,9 +150,9 @@ export function onlyDesktopMessage() {
 export function onlyMobileMessage() {
   return (
     <>
-      This website is a recreation of the macOS dock animation using
-      NextJS, TypeScript, and SCSS. It works only on desktop. Please, visit this
-      website on a desktop computer 🙏.
+      This website is a recreation of the macOS dock animation using NextJS,
+      TypeScript, and SCSS. It works only on desktop. Please, visit this website
+      on a desktop computer 🙏.
     </>
   )
 }

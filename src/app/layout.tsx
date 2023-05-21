@@ -2,7 +2,6 @@ import './globals.scss'
 import { Analytics } from '@vercel/analytics/react'
 import { description, title, url } from '@/utils/config'
 import { Metadata } from 'next'
-import Script from 'next/script'
 import GoogleAnalytics from '@/components/google-analytics'
 
 export const metadata: Metadata = {
