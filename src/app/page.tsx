@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { onlyDesktopMessage, onlyMobileMessage, title } from '@/utils/config'
+import { githubOwner, githubRepo, onlyDesktopMessage, onlyMobileMessage, title } from '@/utils/config'
 
 import { GitHubStars } from '@/components/github-stars'
 import DesktopIcon from '@/components/desktop-icon'
@@ -26,7 +26,7 @@ export default function Home() {
           name="System Information"
           onClick={handleModal}
         />
-        <GitHubStars owner="imanolrtega" repo="mac-dock" />
+        <GitHubStars owner={githubOwner} repo={githubRepo} />
       </section>
       {showModal && (
         <Modal closeModal={handleModal} title="MacOS Dock Animation">

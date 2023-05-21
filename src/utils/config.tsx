@@ -7,6 +7,10 @@ import {
 } from '@/components/icons'
 import Image from 'next/image'
 
+export const githubUrl = `https://github.com/${githubOwner}/${githubRepo}/`
+export const githubOwner = 'imanolortega'
+export const githubRepo = 'mac-dock'
+
 export const buttons = [
   {
     name: 'Finder',
@@ -68,7 +72,7 @@ export const rightItems = [
     icon: (
       <a
         title="GitHub Icon"
-        href="https://github.com/imanolortega/mac-dock"
+        href={githubUrl}
         rel="noopener noreferrer"
         target="_blank"
       >

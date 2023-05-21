@@ -1,9 +1,9 @@
-import { GitHubStarsProps } from '@/utils/interfaces'
-import { StarIcon } from '@/components/icons'
-import styles from './github-stars.module.scss'
-
-import { useEffect, useState } from 'react'
 import { getRepositoryStarCount } from '@/utils/github'
+import { GitHubStarsProps } from '@/utils/interfaces'
+import { githubUrl } from '@/utils/config'
+import { StarIcon } from '@/components/icons'
+import { useEffect, useState } from 'react'
+import styles from './github-stars.module.scss'
 
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
@@ -26,7 +26,7 @@ export function GitHubStars({ owner, repo }: GitHubStarsProps) {
   return (
     <a
       title="GitHub Stars"
-      href="https://github.com/imanolortega/mac-dock/"
+      href={githubUrl}
       rel="noopener noreferrer"
       target="_blank"
       className={styles['container']}
