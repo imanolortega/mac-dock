@@ -140,7 +140,7 @@ export const maxButtonDistance = 200
 
 export const title = 'MacOS Dock Animation'
 export const description =
-  'A recreation of the macOS dock animation using NextJS, TypeScript, and SCSS.'
+  "The app doesn't perform consistently across all devices. On Windows, calculating the button size based on the mouse distance can be performance-intensive, especially if executed frequently. I recommend only using this app on Mac devices."
 export const url = 'https://mac-dock.vercel.app/'
 
 export function onlyDesktopMessage() {
